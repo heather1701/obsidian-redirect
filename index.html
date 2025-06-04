@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Redirecting to Obsidian...</title>
+    <script>
+      const uri = decodeURIComponent(window.location.search.slice(1));
+      window.location.href = uri;
+    </script>
+  </head>
+  <body>
+    <p>If you're not redirected automatically, <a id="fallback" href="#">click here</a>.</p>
+    <script>
+      document.getElementById("fallback").href = decodeURIComponent(window.location.search.slice(1));
+    </script>
+  </body>
+</html>
